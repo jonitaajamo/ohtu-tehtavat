@@ -16,13 +16,13 @@ class QueryBuilder {
         return this;
     }
 
-    QueryBuilder hasAtLeast(int i, String goals) {
-        matchers.add(new HasAtLeast(i, goals));
+    QueryBuilder hasAtLeast(int i, String category) {
+        matchers.add(new HasAtLeast(i, category));
         return this;
     }
 
-    QueryBuilder hasFewerThan(int i, String goals) {
-        matchers.add(new HasFewerThan(i, goals));
+    QueryBuilder hasFewerThan(int i, String category) {
+        matchers.add(new HasFewerThan(i, category));
         return this;
     }
 
